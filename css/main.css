@@ -1,0 +1,254 @@
+/* ================
+Global Layout Set-up
+===================*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'BioRhyme', serif;
+  background-image: url("../img/img7.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #384047;
+  text-shadow: 0px 0px 3px #fff, -1px -1px #fff;
+}
+
+/* ================
+Intro to the form
+===================*/
+
+header {
+  text-align: center;
+  font-size: 1.5em;
+  color: #f4f5ed;
+  background: #384047;
+  padding: 1em 0;
+}
+
+.intro {
+  margin: 0 20px;
+  padding-bottom: .5em;
+}
+
+.intro h1 {
+  text-align: center;
+  margin-bottom: -.5em;
+}
+
+.intro p {
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.style1 {
+  border-bottom: 4px solid #384047;
+  margin-bottom: -1.75em;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.style2 {
+  border-bottom: 1px solid #384047;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* ===================
+form body
+====================*/
+
+form {
+  padding: 10px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-weight: 600;
+  font-size: 130%;
+  margin: 5px 0;
+}
+
+.contact_info {
+  margin-top: 1em;
+}
+
+.contact_info input, .state, .other {
+  border: none;
+  width: 99%;
+  padding: 12px 0 12px 10px;
+  background-color: #f4f5ed;
+  color: #5f5e5d;
+  margin: 12px 0 20px 0;
+  border-radius: 6px;
+  border: 1px solid #e87162;
+}
+
+.state {
+  height: 3.3em;
+  width: 100%;
+}
+
+#zip {
+  width: 50%;
+  display: block;
+}
+
+.newsletter {
+  margin: 1em 0;
+  padding-top: .5em;
+}
+
+h3 {
+  margin: -.5em 0;
+  padding: 0;
+}
+
+.select label,
+.radio label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 15px;
+}
+
+.contact_info label {
+  font-size: 110%;
+}
+
+.select {
+  margin-bottom: 2em;
+}
+
+.other {
+  width: 100%;
+}
+
+input::-webkit-input-placeholder {
+   color: #e87162;
+   text-align: right;
+   font-style: italic;
+   font-size: 90%;
+   padding-right: 1em;
+}
+
+input:focus,
+.other:focus {
+  background-color: #5F5E5D;
+  border: 2px solid #55c3dc;
+  color: #55c3dc;
+  outline: none;
+}
+
+/* ===================
+Submit Button and Footer
+====================*/
+
+button {
+    background-color: #55c3dc;
+    border: none;
+    color: #f4f5ed;
+    padding: 1em 4em;
+    text-align: center;
+    font-size: 120%;
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: .75em;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+/* =================================
+Media Queries
+====================================*/
+
+@media (min-width: 768px) {
+
+
+/* ===================
+Float Clearfix
+=====================*/
+
+  .clearfix:after {
+      clear: both;
+      content: "";
+      display: block;
+  }
+  .contact_info input, .state {
+    float: right;
+    width: 70%;
+    margin-top: -.6em;
+    margin-bottom: 2.5em;
+  }
+  #zip {
+    float: none;
+    display: inline-block;
+    width: 25%;
+  }
+  .zip_label {
+    float: none;
+    display: inline-block;
+    width: 29.68%;
+  }
+
+  #other {
+    height: 150px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  form {
+    max-width: 900px;
+  }
+
+  .contact_info input {
+    width: 660px;
+  }
+
+  .blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    align-content: space-around;
+  }
+  .block1 input, .block2 input {
+    width: 220px;
+    }
+
+  .block1 label, .block2 label {
+    margin-right: 30px;
+  }
+
+  .block1 {
+    margin-right: 42px;
+  }
+
+  .state {
+    float: none;
+    width: 220px;
+    margin-left: 124px;
+    margin-right: 43px;
+    display: inline-block;
+  }
+
+  #zip {
+    width: 220px;
+    margin-left: 88px;
+  }
+  .zip_label {
+    width: auto;
+  }
+
+}
