@@ -100,7 +100,7 @@ legend {
   display: block;
 }
 
-.contact_info input:hover, .state:hover, .other:hover, #zip:hover. {
+.contact_info input:hover, .state:hover, .other:hover, #zip:hover {
   filter: drop-shadow(2px 2px 4px #e87162);
   background-color: #384047;
 }

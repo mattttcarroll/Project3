@@ -31,23 +31,21 @@
 
         <legend>Contact Information</legend>
 
-        <div class="contact_info clearfix">
+        <div class="contact_info">
           <label for="name">Full Name</label>
           <input type="text" id="name" name="user_name" placeholder="Required"><br>
           <div class="clearfix"></div>
 
           <div class="blocks">
 
-            <div class="block1">
+            <div class="block1 clearfix">
               <label for="email">Email Address</label>
               <input type="email" id="email" name="user_email" placeholder="Required"><br>
-              <div class="clearfix"></div>
             </div>
 
-            <div class="block2">
+            <div class="block2 clearfix">
               <label for="phone">Phone Number</label>
               <input type="tel" id="phone" name="user_phone"><br>
-              <div class="clearfix"></div>
             </div>
 
           </div>
@@ -117,25 +115,28 @@
               	<option value="WV">West Virginia</option>
               	<option value="WI">Wisconsin</option>
               	<option value="WY">Wyoming</option>
+              </optgroup>
               <optgroup label="Territories">
                 <option value="AS">American Samoa</option>
                 <option value="GU">Guam</option>
                 <option value="MP">Northern Mariana Islands</option>
                 <option value="PR">Puerto Rico</option>
                 <option value="UM">United States Minor Outlying Islands</option>
+              </optgroup>
               <optgroup label="Armed Forces">
                 <option value="AA">Armed Forces Americas</option>
                 <option value="AP">Armed Forces Pacific</option>
                 <option value="AE">Armed Forces Others</option>
                 <option value="VI">Virgin Islands</option>
-                </select><br>
+              </optgroup>
+              </select><br>
                 <div class="clearfix"></div>
+
             </div>
 
-            <div class="block4">
+            <div class="block4 clearfix">
               <label class="zip_label" for="zip">Zip Code</label>
               <input type="text" id="zip" name="user_zip">
-              <div class="clearfix"></div>
             </div>
           </div>
         </div>
@@ -150,24 +151,31 @@
 
         <div class="select">
         <h3>Select the newsletters you would like to recieve:</h3><br>
-          <input type="checkbox" id="html" value="html" name="user_subscriptions"><label for="html" class="subscriptions">HTML News</label><br>
+          <input type="checkbox" id="html" value="html" name="user_subscriptions">
+          <label for="html" class="subscriptions">HTML News</label><br>
 
-          <input type="checkbox" id="css" value="css" name="user_subscriptions"><label for="css" class="subscriptions">CSS News</label><br>
+          <input type="checkbox" id="css" value="css" name="user_subscriptions">
+          <label for="css" class="subscriptions">CSS News</label><br>
 
-          <input type="checkbox" id="javascript" value="javascript" name="user_subscriptions"><label for="javascript" class="subscriptions">Javascript News</label><br>
+          <input type="checkbox" id="javascript" value="javascript" name="user_subscriptions">
+          <label for="javascript" class="subscriptions">Javascript News</label><br>
 
-          <input type="checkbox" id="mobile" value="mobile" name="user_subscriptions"><label for="mobile" class="subscriptions">Mobile Design News</label><br>
+          <input type="checkbox" id="mobile" value="mobile" name="user_subscriptions">
+          <label for="mobile" class="subscriptions">Mobile Design News</label><br>
         </div>
 
         <div class="newsletter_format">
 
         <h3>Newsletter format:</h3><br>
           <div class="radio">
-          <input type="radio" id="html_format" value="html_format" name="user_subscription_format"><label for="html_format" class="format">HTML</label><br>
+          <input type="radio" id="html_format" value="html_format" name="user_subscription_format">
+          <label for="html_format" class="format">HTML</label><br>
 
-          <input type="radio" id="css_format" value="css_format" name="user_subscription_format"><label for="css_format" class="format">Plain Text</label><br>
+          <input type="radio" id="css_format" value="css_format" name="user_subscription_format">
+          <label for="css_format" class="format">Plain Text</label><br>
 
-          <input type="radio" id="blog_format" value="blog_format" name="user_subscription_format"><label for="blog_format" class="format">Blog Subscription</label><br>
+          <input type="radio" id="blog_format" value="blog_format" name="user_subscription_format">
+          <label for="blog_format" class="format">Blog Subscription</label><br>
           <br>
           </div>
 
